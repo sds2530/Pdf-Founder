@@ -1,8 +1,70 @@
 *{
     margin: 0;
-    padding: 0;
     font-family: sans-serif;
 }
-/* body{
-    background-image: 
-} */
+.header{
+    padding-bottom:10em;;
+}
+
+body{
+    background-image: url(https://images.wallpaperscraft.com/image/lamps_books_library_73969_1920x1080.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.input_data input{
+    width: 200px;
+    text-align: center;
+    border: 2px solid #aaa;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 17px;
+    outline:none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 2s;
+    
+    
+}
+.input_data button{
+    width: 80px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    font-size: 17px;
+    outline:none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 2s;
+    background-color: white;
+}
+
+.input_data input:hover{
+    width: 250px;
+    display:inline-block;
+    background-color: rgba(224, 224, 77, 0.356);
+    
+}
+
+@media only screen and (min-width:200px) and (max-width:720px){
+    .header{
+        width: 100%;
+        margin: auto;
+        color:rgb(255, 255, 255);
+        padding-bottom: 1em;
+        font-size: 22px;
+        
+    }
+    body{
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/459/731/792/landscape-city-vertical-wallpaper-preview.jpg);
+        margin: 0;
+        /* padding:0; */
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover; 
+    }
+    
+}
