@@ -1,0 +1,23 @@
+{
+  "name": "pdffounder",
+  "version": "1.0.0",
+  "description": "Download Pdf Free",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sds2530/Pdf-Founder.git"
+  },
+  "author": "Soumyadeep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sds2530/Pdf-Founder/issues"
+  },
+  "homepage": "https://github.com/sds2530/Pdf-Founder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "package": "^1.0.1"
+  }
+}
