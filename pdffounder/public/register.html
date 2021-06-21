@@ -24,10 +24,26 @@
             background-repeat: no-repeat;
             
         }
-        .input_data input{
-            width: 200px;
-            text-align: center;
-            border: 2px solid #aaa;
+        form{
+            margin: 0 auto;
+            width: 250px;
+        }
+        label{
+            color: rgb(0, 0, 0);
+            font-size: large;
+            font-family: cursive;
+            padding-bottom: 5em;
+            padding-top: 10em;
+        }
+        fieldset{
+            background-image: linear-gradient(to right, rgb(185, 125, 14), rgba(253, 253, 133, 0.952));
+            border-radius: 10px;
+        }
+        input{
+            margin-top: 2px;
+            box-shadow: white;
+            border: 2px inset;
+            width: 300px;
             display: inline-block;
             border-radius: 5px;
             font-size: 17px;
@@ -35,10 +51,9 @@
             padding: 8px;
             box-sizing: border-box;
             transition: 2s;
-            
-            
         }
-        .input_data button{
+        button{
+                 
             width: 80px;
             border: 2px solid #aaa;
             border-radius: 5px;
@@ -50,17 +65,7 @@
             transition: 2s;
             background-color: white;
         }
-
-        .input_data input:hover{
-            width: 250px;
-            display:inline-block;
-            background-color: rgba(224, 224, 77, 0.356);
-            
-        }
-        .input_data button:hover{
-            opacity: 0.8;
-        }
-
+        
         @media only screen and (min-width:200px) and (max-width:720px){
             .header{
                 width: 100%;
@@ -87,20 +92,29 @@
     </style>
     <div class="header">
             <center style="background-color: black; height: 6em; align-content: center;"><h1><font color ="white" size="45" face="Dubai Medium"><marquee direction="right" scrollamount ="200" scrolldelay ="800">PDF Finder</marquee></font></h1></ center>
-            <table cellpadding=40 align="left">
-                <tr>
-                    <td ><font size="20" color="#fff">Home</font></td>
-                    <td><font size="50"color="#fff">About</font></td>
-                    <td><font size="50"color="#fff">Help</font></td>
-                </tr>
-            </table>
+           
     </div>
     <div class=main>
-        <form action="/login" method="GET">
-            <div class="input_data" style="text-align: center;">
-                <input type="textbox" placeholder="Enter Pdf Name" id="input" required>
-                <button type="submit">Search</button>
-            </div>
+        <form action="/register" method="GET">
+            <fieldset>
+                <legend style="background-color:rgb(255, 255, 255); border-radius: 2px; font-size: 18px;">Register</legend>
+                <label><b>Name</b></label><br>
+                <input type="text" placeholder="Enter Name" name="name" required><br>
+                <label><b>Mail</b></label><br>
+                <input type="email" placeholder="Enter Email" name="umail" required><br>
+                <label><b>Mobile</b></label><br>
+                <input type="tel" id="phone" name="phone" placeholder="1234567891" pattern="[0-9]{10}" required><br>
+                <label><b>Username</b></label><br>
+                <input type="id" placeholder="Enter Username" name="uname" required><br>
+                <label><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+                
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<button type="submit">Register</button>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<a href="http://127.0.0.1:5000/">Already Registered</a></p>
+            </fieldset>
+            <!-- <button type="login" formaction="/login">Login</button> -->
+
+            
         </form>
     
     </div>

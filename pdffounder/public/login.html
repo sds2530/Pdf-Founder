@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf Founder</title>
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .header{
+            padding-bottom:10em;;
+        }
+
+        body{
+            background-image: url(https://images.wallpaperscraft.com/image/lamps_books_library_73969_1920x1080.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        form{
+            margin: 0 auto;
+            width: 250px;
+        }
+        label{
+            color: rgb(0, 0, 0);
+            font-size: large;
+            font-family: cursive;
+            padding-bottom: 5em;
+            padding-top: 10em;
+        }
+        fieldset{
+            background-image: linear-gradient(to right, rgb(185, 125, 14), rgba(253, 253, 133, 0.952));
+            border-radius: 10px;
+        }
+        input{
+            margin-top: 2px;
+            box-shadow: white;
+            border: 2px inset;
+            width: 300px;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 17px;
+            outline:none;
+            padding: 8px;
+            box-sizing: border-box;
+            transition: 2s;
+        }
+        button{
+                 
+            width: 80px;
+            border: 2px solid #aaa;
+            border-radius: 5px;
+            font-size: 17px;
+            outline:none;
+            padding: 8px;
+            cursor: pointer;
+            box-sizing: border-box;
+            transition: 2s;
+            background-color: white;
+        }
+        
+        @media only screen and (min-width:200px) and (max-width:720px){
+            .header{
+                width: 150%;
+                margin: auto;
+                color:rgb(255, 255, 255);
+                padding-bottom: 0.5em;
+                padding-bottom: 10em;
+                font-size: 22px;
+                     
+                
+            }
+            body{
+                background-image: url(https://c4.wallpaperflare.com/wallpaper/459/731/792/landscape-city-vertical-wallpaper-preview.jpg);
+                margin: 0;
+                /* padding:0; */
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover; 
+            }
+            form{
+                margin: 0 auto;
+                width: fit-content;
+            }
+            label{
+                color: rgb(0, 0, 0);
+                font-size: large;
+                font-family: cursive;
+                padding-bottom: 5em;
+                padding-top: 10em;
+            }
+            fieldset{
+                background-image: linear-gradient(to right, rgb(185, 125, 14), rgba(253, 253, 133, 0.952));
+                border-radius: 10px;
+                width: fit-content;
+            }
+            input{
+                margin-top: 2px;
+                box-shadow: white;
+                border: 2px inset;
+                width: 300px;
+                display: inline-block;
+                border-radius: 5px;
+                font-size: 17px;
+                outline:none;
+                padding: 8px;
+                box-sizing: border-box;
+                transition: 2s;
+            }
+            button{
+                    
+                width: 80px;
+                border: 2px solid #aaa;
+                border-radius: 5px;
+                font-size: 17px;
+                outline:none;
+                padding: 8px;
+                cursor: pointer;
+                box-sizing: border-box;
+                transition: 2s;
+                background-color: white;
+            }
+    
+    }
+
+    </style>
+    <div class="header">
+        <center style="background-color: black; height: 6em; align-content: center;"><h1><font color ="white" size="45" face="Dubai Medium"><marquee direction="right" scrollamount ="200" scrolldelay ="800">PDF Finder</marquee></font></h1></ center>
+        
+    </div>
+    <div class="main">
+        <form>
+            <fieldset>
+                <legend style="background-color: white; border-radius: 4px;">Login</legend>
+                <label><b>Username</b></label>
+                <input type="user" placeholder="Enter Username" name="uname" required><br>
+      
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+      
+                &emsp;&emsp;&emsp;&emsp;<button type="submit" formaction="/index">Login</button>
+                <button type="button" class="cancelbtn">Cancel</button><br><br>
+                <p>&emsp;&emsp;&emsp;&emsp;&nbsp; <a href="http://127.0.0.1:5000/register">Create New Account</a></p>
+            </fieldset>
+            
+        </form>
+
+    </div>
+    
+</body>
+</html>
