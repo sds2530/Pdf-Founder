@@ -5,7 +5,6 @@
 .header{
     padding-bottom:10em;;
 }
-
 body{
     background-image: url(https://images.wallpaperscraft.com/image/lamps_books_library_73969_1920x1080.jpg);
     background-attachment: fixed;
@@ -13,42 +12,23 @@ body{
     background-repeat: no-repeat;
     
 }
-.input_data input{
-    width: 200px;
-    text-align: center;
-    border: 2px solid #aaa;
-    display: inline-block;
-    border-radius: 5px;
-    font-size: 17px;
-    outline:none;
-    padding: 8px;
-    box-sizing: border-box;
-    transition: 2s;
-    
-    
-}
-.input_data button{
-    width: 80px;
-    border: 2px solid #aaa;
-    border-radius: 5px;
-    font-size: 17px;
-    outline:none;
-    padding: 8px;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: 2s;
-    background-color: white;
-}
+label{
+    color: white;
+    text-align: left;
 
-.input_data input:hover{
-    width: 250px;
-    display:inline-block;
-    background-color: rgba(224, 224, 77, 0.356);
+}
+form {
+    border: none;
     
 }
-.input_data button:hover{
-    opacity: 0.8;
-}
+/* input[type=text],
+input[type=password] {
+    width: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /* display: inline-block; 
+    border: 1px solid #ccc;
+    box-sizing: border-box; */
 
 @media only screen and (min-width:200px) and (max-width:720px){
     .header{
@@ -57,7 +37,7 @@ body{
         color:rgb(255, 255, 255);
         padding-bottom: 1em;
         font-size: 22px;
-        
+            
     }
     body{
         background-image: url(https://c4.wallpaperflare.com/wallpaper/459/731/792/landscape-city-vertical-wallpaper-preview.jpg);
@@ -70,5 +50,5 @@ body{
         -moz-background-size: cover;
         -o-background-size: cover; 
     }
-    
+        
 }
